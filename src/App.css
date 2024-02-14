@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dice_main_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.container-dice{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.dice-left-container{
+  width: 500px;
+height: 450px
+
+}
+.dice-left-container img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.right-container{
+  width: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+h2.dice-title {
+  font-size: 70px;
+  font-weight: 900;
 }
+.dice_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 20px;
+}
+button.playbtn {
+  text-decoration: none;
+  background: black;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.dice_second_page_container{
+  width:90%;
+  height:100vh;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.topscore_container {
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  align-items: center;
+}
+.select_number_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chosenum {
+  display:flex;
+  gap: 12px;
+}
+.chosenum p {
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 600;
+}
+.total_score_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total_score_container .chosennum{
+  font-size: 40px;
+    font-family: roboto;
+    font-weight: 800;
+}
+.txtbold{
+  font-size: 16px;
+  font-weight: 600;
+}
+.howtoplay_desc_container{
+  width:50%;
+margin: auto;
+background: #FBF1F1;
+  
+}
+.howtoply_desc{
+  list-style: none;
+}
+.howtoplay_desc_container {
+  width: 60%;
+  margin: auto;
+  background: #FBF1F1;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+.center_dice_img {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 20px auto;
+  justify-content: c;
+  align-items: center;
+  gap: 10px;
+
+}
+.clickon_txt{
+  font-size: 20px;
+  font-weight: 500;
+}
+.imgdice{
+  width:200px;
+  height:200px;
+}
+.img_container {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+
+}
+.imgdice {
+  position: absolute;
+}
+button.restbtn,button.rulebtn {
+  font-size: 18px;
+  padding: 4px 12px;
+  background: lightgray;
+  color: black;
+  border: none;
+  border-radius: 6px;
+}
+@media(max-width:550px){
+  h2.dice-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+button.playbtn {
+  
+  padding: 10px;
+  font-size: 14px;
+
+}
+}
+.errormsg{
+  color:red;
+  font-weight: 600;
+}
+/* .howtoplay_desc_container{
+  display:none;
+} */

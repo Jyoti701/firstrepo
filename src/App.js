@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Dice from './Dice';
+import Dicegamepage from './Dicegamepage';
 
 function App() {
+  const [isgamestart, setIsgamestart] = useState(false);
+
+  const togglebutton = () => {
+    setIsgamestart((prev)=>!prev);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {
+      isgamestart ? <Dicegamepage/>:<Dice toggle={togglebutton}/>
+    }
+
     </div>
   );
 }
